@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+data/
+*.db
+*.sqlite3
+cloudflared.exe
+*.bak*
+.git

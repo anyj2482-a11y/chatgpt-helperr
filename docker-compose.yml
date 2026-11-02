@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  chatgpt-2fa-suite:
+    build: .
+    container_name: chatgpt-2fa-suite
+    restart: always
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8888

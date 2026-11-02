@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: chatgpt-2fa-suite
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
